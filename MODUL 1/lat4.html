@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <meta vharset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      <form>
+        <input type="text" placeholder="Masukkan Nama Anda" v-model="namaSaya">
+        <br>Nama saya adalah: {{namaSaya}}<br>
+        <label>Nama saya adalah: </label>
+      </form>
+    </div>
+    <script>
+    var app = new Vue({
+      el: "#app",
+      data: {
+        "namaSaya" : "caca"
+      }
+    })
+    </script>
+  </body>
+</html>
